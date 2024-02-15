@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "Spiral is here! Let's dev.",
-    "build": "Spiral is here! Let's build.",
+    "dev": "prisma generate && next dev",
+    "build": "prisma generate && prisma db push && next build",
     "format:write": "prettier --write \"**/*.{css,js,json,jsx,ts,tsx}\"",
     "format": "prettier \"**/*.{css,js,json,jsx,ts,tsx}\"",
     "start": "next start",
@@ -24,7 +24,6 @@
     "framer-motion": "^10.16.4",
     "gray-matter": "^4.0.3",
     "js-cookie": "^3.0.5",
-    "lucide": "^0.331.0",
     "lucide-react": "^0.292.0",
     "nanoid": "^4.0.2",
     "next": "14.0.2",
