@@ -1,0 +1,18 @@
+# Arquivos de byte compilados
+__pycache__/
+*.pyc
+
+# Arquivos gerados pelo ambiente de desenvolvimento
+.idea/
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos de configuração local
+.env
+.next/
+
+# Dependências e pacotes instalados
+venv/
+node_modules/
