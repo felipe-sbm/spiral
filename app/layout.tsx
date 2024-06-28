@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: "Spiral",
-    template: "%s | Simplesmente espiral.",
+    template: "%s | Sendo espiral do jeito certo.",
   },
   description: "Site da Spiral.",
   openGraph: {
-    title: "Spiral.",
+    title: "Spiral",
     description: "Site da Spiral.",
     url: baseUrl,
-    siteName: "Spiral.",
+    siteName: "Spiral Spiral",
     locale: "pt_BR",
     type: "website",
   },
@@ -57,9 +57,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="./public/favicon.ico" />
       </Head>
       <body className="antialiased max-w-6xl">
-        <main className="flex-auto min-w-80 flex flex-col px-2 md:px-0">
+        <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
-          <div className="content-center bg-blue-600">{children}</div>
+          {children}
           <Footer />
           <Analytics />
           <SpeedInsights />
