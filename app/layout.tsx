@@ -48,7 +48,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        "text-black bg-white dark:text-white dark:bg-black",
+        "antialiased text-black bg-white dark:text-white dark:bg-black",
         GeistSans.variable,
         GeistMono.variable
       )}
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body className="antialiased max-w-6xl">
         <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
-          {children}
+          <div className="max-w-5xl mx-auto py-10 px-12">{children}</div>
           <Footer />
           <Analytics />
           <SpeedInsights />

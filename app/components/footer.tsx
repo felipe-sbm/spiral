@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="lg:flex lg:items-start lg:gap-8">
           <div className="text-teal-600 dark:text-teal-300">
             <Image
-              className="w-16 lg:w-40 mt-1 invert dark:invert-0"
+              className="w-16 lg:w-40 mt-1 invert dark:invert-0 rounded-full  "
               src="/logo.png"
               alt="Logo da Spiral"
               width={100}
@@ -96,13 +96,15 @@ export default function Footer() {
 
             <div className="col-span-4 sm:col-span-1 mt-8 lg:sm:mt-0">
               <h4 className="font-medium text-gray-900 dark:text-white">
-                Conheça o desenvolvedor
+                Literalmente eu
               </h4>
 
               <ul className="mt-3 space-y-4 text-sm">
                 <li className="sm:hidden text-sm text-gray-500 dark:text-gray-400">
-                  A spiral é uma empresa que atua no ramo de tecnologias de
-                  software e websites desde 2023. Conheça mais sobre nós:
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  vero perferendis id, doloremque commodi eum veniam! Porro
+                  exercitationem distinctio ut quae magnam ipsum blanditiis!
+                  Perspiciatis error possimus dolores reiciendis voluptates.
                 </li>
                 <li>
                   <Link
@@ -110,8 +112,8 @@ export default function Footer() {
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     <img
-                      src="https://avatars.githubusercontent.com/u/129466661?s=400&v=4"
-                      alt="Logo da Spiral"
+                      src="https://th.bing.com/th/id/OIP.gwqnk6fR-8fZPe7B-HZqPQHaFj?rs=1&pid=ImgDetMain"
+                      alt="Lorem"
                       className="w-24 rounded-lg"
                     />
                   </Link>
