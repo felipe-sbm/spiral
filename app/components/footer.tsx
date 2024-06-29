@@ -150,7 +150,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  href="/bookuser"
+                  href="/pages/bookuser"
                   rel="noreferrer"
                   className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                 >
