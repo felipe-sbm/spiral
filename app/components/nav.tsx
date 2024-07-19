@@ -39,7 +39,7 @@ export function Navbar() {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-500 transition hover:text-purple-950/75"
                     href="/"
                   >
                     INÍCIO
@@ -48,7 +48,7 @@ export function Navbar() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-500 transition hover:text-purple-950/75"
                     href="/pages/about"
                   >
                     A SPIRAL
@@ -57,7 +57,7 @@ export function Navbar() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-500 transition hover:text-purple-950/75"
                     href="/pages/projects"
                   >
                     NOSSOS PROJETOS
@@ -66,7 +66,7 @@ export function Navbar() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-500 transition hover:text-purple-950/75"
                     href="/pages/galery"
                   >
                     GALERIA
@@ -75,7 +75,7 @@ export function Navbar() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-500 transition hover:text-purple-950/75"
                     href="/pages/supportus"
                   >
                     DOAÇÕES
@@ -97,7 +97,7 @@ export function Navbar() {
 
             <div className="block md:hidden">
               <button
-                className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+                className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-purple-950/75"
                 button-type="menu"
                 title="Menu"
               >

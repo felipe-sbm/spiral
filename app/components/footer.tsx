@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Nossa história 🌀
@@ -35,7 +35,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Conheça o nosso time!
@@ -43,7 +43,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Especialidades da empresa
@@ -51,7 +51,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Trabalhe conosco (em breve!)
@@ -66,7 +66,7 @@ export default function Footer() {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Desenvolvimento WEB
@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Webdesign
@@ -82,7 +82,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Cibersegurança (em breve!)
@@ -90,7 +90,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Servidores (em breve!)
@@ -105,7 +105,7 @@ export default function Footer() {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Endereço
@@ -113,7 +113,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Tutoriais
@@ -121,7 +121,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Surgestões
@@ -129,7 +129,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Eventos da comunidade
@@ -143,7 +143,7 @@ export default function Footer() {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Central de dúvidas
@@ -151,7 +151,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
+                  className="text-gray-700 transition hover:text-purple-950/75"
                   href="#"
                 >
                   Política de privacidade
@@ -162,7 +162,7 @@ export default function Footer() {
                   className="group flex gap-1.5 lg:justify-start justify-center"
                   href="#"
                 >
-                  <span className="text-gray-700 transition group-hover:text-gray-700/75">
+                  <span className="text-gray-700 transition group-hover:text-purple-950/75">
                     Entre em contato conosco
                   </span>
                   <span className="relative flex h-2 w-2">
@@ -182,7 +182,7 @@ export default function Footer() {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-purple-700 transition hover:text-teal-700/75"
+                className="text-purple-700 transition hover:text-purple-950/75"
               >
                 <span className="sr-only">GitHub</span>
                 <Github />
@@ -193,7 +193,7 @@ export default function Footer() {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-purple-700 transition hover:text-teal-700/75"
+                className="text-purple-700 transition hover:text-purple-95075"
               >
                 <span className="sr-only">e-mail</span>
                 <Mail />
@@ -204,7 +204,7 @@ export default function Footer() {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-purple-700 transition hover:text-teal-700/75"
+                className="text-purple-700 transition hover:text-purple-950/75"
               >
                 <span className="sr-only">Lista de visitantes</span>
                 <BookUser />
@@ -215,7 +215,7 @@ export default function Footer() {
                 href="#"
                 rel="noreferrer"
                 target="_blank"
-                className="text-purple-700 transition hover:text-teal-700/75"
+                className="text-purple-700 transition hover:text-purple-950/75"
               >
                 <span className="sr-only">LinkedIn</span>
                 <Linkedin />

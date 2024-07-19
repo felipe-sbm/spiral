@@ -12,7 +12,7 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Spiral",
+    default: "Spiral SBM 🎆",
     template: "%s | Sendo espiral do jeito certo.",
   },
   description: "Site da Spiral.",
