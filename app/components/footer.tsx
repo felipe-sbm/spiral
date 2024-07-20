@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-white dark:bg-slate-950">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-4 rounded-lg bg-gradient-to-r from-purple-950 to-purple-500  p-6 shadow-lg sm:flex-row sm:justify-between">
           <strong className="text-xl text-white sm:text-xl">
@@ -12,7 +12,7 @@ export default function Footer() {
             Impulse seus negócios com a Spiral!{" "}
           </strong>
           <a
-            className="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-purple-700 hover:bg-transparent hover:font-bold hover:text-white focus:outline-none focus:ring active:bg-white/90"
+            className="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-purple-700 hover:bg-transparent hover:font-bold hover:text-white transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300 focus:outline-none focus:ring active:bg-white/90"
             href="#"
           >
             <span className="text-sm font-medium"> Vamos começar </span>
@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-purple-950/75"
+                  className="text-gray-700 transition hover:text-purple-950/75 dark:hover:text-purple-700/75"
                   href="#"
                 >
                   Nossa história 🌀

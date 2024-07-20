@@ -49,31 +49,31 @@ export function Navbar() {
             INÍCIO
           </a>
           <a
-            href="/categorias/lojas"
+            href="/pages/about"
             className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
           >
             A SPIRAL
           </a>
           <a
-            href="/categorias/encarte"
+            href="/pages/projects"
             className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
           >
             NOSSOS PROJETOS
           </a>
           <a
-            href="/categorias/supermomentos"
+            href="/pages/gallery"
             className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
           >
             GALERIA
           </a>
           <a
-            href="/categorias/trabalhe"
+            href="/pages/supportus"
             className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
           >
             DOAÇÕES
           </a>
           <a
-            href="/categorias/trabalhe"
+            href="/pages/contact"
             className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
           >
             CONTATO
@@ -81,7 +81,7 @@ export function Navbar() {
         </PopoverGroup>
       </nav>
       <Dialog
-        className="lg:hidden"
+        className="lg:hidden shadow"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
@@ -98,7 +98,7 @@ export function Navbar() {
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-white"
+              className="-m-2.5 rounded-md ml-3.5 text-gray-700 dark:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Fechar menu</span>
@@ -109,41 +109,41 @@ export function Navbar() {
             <div className="my-6 divide-y divide-gray-500/10">
               <div className="space-y-5 py-6">
                 <a
-                  href="#"
-                  className="flex -mx-3 block indent-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  href="/"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
                 >
                   <DoorOpen /> Início
                 </a>
                 <a
-                  href="#"
-                  className="flex -mx-3 block indent-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  href="/pages/about"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
                 >
                   <Shell />A Spiral
                 </a>
                 <a
-                  href="#"
-                  className="flex -mx-3 block indent-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  href="/pages/projects"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
                 >
                   <Newspaper />
                   Nosso Projetos
                 </a>
                 <a
-                  href="#"
-                  className="flex -mx-3 block indent-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  href="/pages/gallery"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
                 >
                   <BookImage />
                   Galeria
                 </a>
                 <a
-                  href="#"
-                  className="flex -mx-3 block indent-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  href="/pages/supportus"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
                 >
                   <MessageCircleHeart />
                   Doações
                 </a>
                 <a
-                  href="#"
-                  className="flex -mx-3 block indent-2 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  href="/pages/contact"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
                 >
                   <MailPlus /> Contato
                 </a>
