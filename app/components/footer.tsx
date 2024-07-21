@@ -1,4 +1,4 @@
-import { Github, Mail, BookUser, Linkedin, MoveRight } from "lucide-react";
+import { Github, Mail, BookUser, Linkedin, MoveRight, Instagram } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -185,7 +185,7 @@ export default function Footer() {
           <ul className="flex justify-center gap-6 sm:justify-end">
             <li>
               <a
-                href="#"
+                href="https://github.com/spiral-sbm"
                 rel="noreferrer"
                 target="_blank"
                 className="text-purple-700 dark:text-purple-500 transition hover:text-purple-950/75 dark:hover:text-purple-700/95"
@@ -207,7 +207,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/pages/bookuser"
                 rel="noreferrer"
                 target="_blank"
                 className="text-purple-700 dark:text-purple-500 transition hover:text-purple-950/75 dark:hover:text-purple-700/95"
@@ -218,24 +218,25 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.instagram.com/spiralsbm/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-purple-700 dark:text-purple-500 transition hover:text-purple-950/75 dark:hover:text-purple-700/95"
               >
                 <span className="sr-only">LinkedIn</span>
-                <Linkedin />
+                <Instagram />
               </a>
             </li>
           </ul>
 
           <div className="mt-6 sm:flex sm:items-center sm:justify-between">
-            <div className="invert dark:invert-0">
+            <div className="invert-0 dark:invert">
               <Image
                 src="/logo.png"
                 width={50}
                 height={50}
                 alt="Logo da Spiral"
+                className="rounded-full"
               />
             </div>
             <p className="mt-1 text-center text-sm text-gray-500 dark:text-zinc-200 sm:mt-0 sm:text-right">

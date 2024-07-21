@@ -55,7 +55,7 @@ export default function RootLayout({
     >
       <Head>
         <link rel="shortcut icon" href="./public/favicon.ico" />
-      </Head>W
+      </Head>
       <body className="flex antialiased">
         <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
