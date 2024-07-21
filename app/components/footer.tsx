@@ -186,8 +186,7 @@ export default function Footer() {
             <li>
               <a
                 href="https://github.com/spiral-sbm"
-                rel="noreferrer"
-                target="_blank"
+                rel="Página do GitHub"
                 className="text-purple-700 dark:text-purple-500 transition hover:text-purple-950/75 dark:hover:text-purple-700/95"
               >
                 <span className="sr-only">GitHub</span>
@@ -198,7 +197,7 @@ export default function Footer() {
               <a
                 href="mailto:spiral-sbm@outlook.com"
                 rel="noreferrer"
-                target="_blank"
+                target=""
                 className="text-purple-700 dark:text-purple-500 transition hover:text-purple-950/75 dark:hover:text-purple-700/95"
               >
                 <span className="sr-only">E-mail</span>
@@ -209,7 +208,6 @@ export default function Footer() {
               <a
                 href="/pages/bookuser"
                 rel="noreferrer"
-                target="_blank"
                 className="text-purple-700 dark:text-purple-500 transition hover:text-purple-950/75 dark:hover:text-purple-700/95"
               >
                 <span className="sr-only">Lista de visitantes</span>
@@ -219,11 +217,10 @@ export default function Footer() {
             <li>
               <a
                 href="https://www.instagram.com/spiralsbm/"
-                rel="noreferrer"
-                target="_blank"
+                rel="Página do Instagram"
                 className="text-purple-700 dark:text-purple-500 transition hover:text-purple-950/75 dark:hover:text-purple-700/95"
               >
-                <span className="sr-only">LinkedIn</span>
+                <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
             </li>

@@ -44,37 +44,37 @@ export function Navbar() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <a
             href="/"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+            className="py-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-2 text-sm font-semibold text-gray-700 dark:text-zinc-200"
           >
             INÍCIO
           </a>
           <a
             href="/pages/about"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+            className="py-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-2 text-sm font-semibold text-gray-700 dark:text-zinc-200"
           >
             A SPIRAL
           </a>
           <a
             href="/pages/projects"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+            className=" py-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-2 text-sm font-semibold text-gray-700 dark:text-zinc-200"
           >
             NOSSOS PROJETOS
           </a>
           <a
             href="/pages/gallery"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+            className="py-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-2 text-sm font-semibold text-gray-700 dark:text-zinc-200"
           >
             GALERIA
           </a>
           <a
             href="/pages/supportus"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+            className="py-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-2 text-sm font-semibold text-gray-700 dark:text-zinc-200"
           >
             DOAÇÕES
           </a>
           <a
             href="/pages/contact"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+            className="py-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-2 text-sm font-semibold text-gray-700 dark:text-zinc-200"
           >
             CONTATO
           </a>

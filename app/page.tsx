@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Shell } from "lucide-react";
+import { Triangle, Zap, Gem } from "lucide-react";
 
 export default function Page() {
   return (
@@ -13,23 +13,35 @@ export default function Page() {
         />
       </div>
       <div>
-        <div>
-          <h1 className="leading-relaxed font-medium text-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 👋🏼
+        <div className="leading-relaxed text-gray-700 dark:text-zinc-200">
+          <h1 className="font-medium text-3xl text-purple-950 dark:text-purple-300">
+            Simplesmente comece a planejar
           </h1>
-          <p className="leading-relaxed font-light">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            natus, et illum facere quas, molestias accusantium itaque
-            reprehenderit nobis eum repellat maiores obcaecati pariatur. Sit ex
-            eveniet laudantium praesentium reiciendis.
-            <a
-              href="/jp-curriculo.pdf"
-              className="mt-2 flex hover:opacity-75"
-              download
-            >
-              <Shell className="mr-2 mb-9" /> This is spiral.
-            </a>
+          <p className="font-light pt-2">
+            A Spiral irá te ajudar em desenvolver seus planos e impulsionar sua
+            carreira ou empresa. Com desenvolvimeto de Websites, sistemas,
+            API's, aplicativos. Nossa startup é focada em compromisso com o
+            cliente, entregando no prazo e com qualidade.
           </p>
+          <strong className="font-semibold">
+            Venha fazer parte dessa jornada conosco!
+          </strong>
+        </div>
+
+        {/* Medalhas */}
+        <div className="mt-2 space-x-2">
+        <span className="inline-flex items-center justify-center rounded-full border border-zinc-50 px-2.5 py-0.5 zinc-50">
+          <Triangle className="-ms-1 me-1.5 h-4 w-4 fill-zinc-50"/>
+          <p className="whitespace-nowrap text-sm">Vercel</p>
+        </span>
+        <span className="inline-flex items-center justify-center rounded-full border border-amber-500 px-2.5 py-0.5 text-amber-700">
+        <Zap className="-ms-1 me-1.5 h-4 w-4" />
+        <p className="whitespace-nowrap text-sm">Vite</p>
+        </span>
+        <span className="inline-flex items-center justify-center rounded-full border border-red-500 px-2.5 py-0.5 text-red-700">
+          <Gem className="-ms-1 me-1.5 h-4 w-4" />
+          <p className="whitespace-nowrap text-sm">Rails</p>
+        </span>
         </div>
       </div>
     </div>
