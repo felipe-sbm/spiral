@@ -54,7 +54,6 @@ export default function Footer() {
               <li>
                 <a
                   className="text-gray-500 dark:text-zinc-700 transition hover:text-purple-950/75 dark:hover:text-purple-950/95 cursor-not-allowed"
-                  href="#"
                 >
                   Trabalhe conosco (em breve!)
                 </a>
@@ -87,7 +86,6 @@ export default function Footer() {
               <li>
                 <a
                   className="text-gray-500 dark:text-zinc-700 transition hover:text-purple-950/75 dark:hover:text-purple-950/95 cursor-not-allowed"
-                  href="#"
                 >
                   Cibersegurança (em breve!)
                 </a>
@@ -95,7 +93,6 @@ export default function Footer() {
               <li>
                 <a
                   className="text-gray-500 dark:text-zinc-700 transition hover:text-purple-950/75 dark:hover:text-purple-950/95 cursor-not-allowed"
-                  href="#"
                 >
                   Servidores (em breve!)
                 </a>
