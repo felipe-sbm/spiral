@@ -110,40 +110,40 @@ export function Navbar() {
               <div className="space-y-5 py-6">
                 <a
                   href="/"
-                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-zinc-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-700 dark:text-zinc-200"
                 >
                   <DoorOpen /> Início
                 </a>
                 <a
                   href="/pages/about"
-                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-700 dark:text-zinc-200"
                 >
                   <Shell />A Spiral
                 </a>
                 <a
                   href="/pages/projects"
-                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-700 dark:text-zinc-200"
                 >
                   <Newspaper />
                   Nosso Projetos
                 </a>
                 <a
                   href="/pages/gallery"
-                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-700 dark:text-zinc-200"
                 >
                   <BookImage />
                   Galeria
                 </a>
                 <a
                   href="/pages/supportus"
-                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-700 dark:text-zinc-200"
                 >
                   <MessageCircleHeart />
                   Doações
                 </a>
                 <a
                   href="/pages/contact"
-                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-white"
+                  className="flex -mx-3 block indent-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-900 hover:text-purple-950/75 dark:hover:text-purple-300/95 px-3 py-2 text-base font-semibold leading-7 text-gray-700 dark:text-zinc-200"
                 >
                   <MailPlus /> Contato
                 </a>
