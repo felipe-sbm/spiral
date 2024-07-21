@@ -55,11 +55,11 @@ export default function RootLayout({
     >
       <Head>
         <link rel="shortcut icon" href="./public/favicon.ico" />
-      </Head>
-      <body className="antialiased max-w-6xl">
+      </Head>W
+      <body className="flex antialiased">
         <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
-          <div className="max-w-5xl mx-auto py-10 px-12">{children}</div>
+          <div className="max-w-6xl mx-auto py-10 px-12">{children}</div>
           <Footer />
           <Analytics />
           <SpeedInsights />
