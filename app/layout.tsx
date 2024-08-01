@@ -12,7 +12,7 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Spiral SBM 🎆",
+    default: "Spiral SBM",
     template: "%s | Sendo espiral do jeito certo.",
   },
   description: "Site da Spiral.",
@@ -48,7 +48,7 @@ export default function RootLayout({
     <html
       lang="pt-br"
       className={cx(
-        "antialiased text-black bg-white dark:text-white dark:bg-black",
+        "antialiased text-black bg-white dark:text-white dark:bg-black scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-900 scrollbar-track-gray-100",
         GeistSans.variable,
         GeistMono.variable
       )}
@@ -59,7 +59,7 @@ export default function RootLayout({
       <body className="flex antialiased">
         <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
           <Navbar />
-          <div className="max-w-6xl mx-auto py-10 px-12">{children}</div>
+          <div className="max-w-7xl mx-auto py-10 px-12">{children}</div>
           <Footer />
           <Analytics />
           <SpeedInsights />

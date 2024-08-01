@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+/* width of scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+@media (prefers-color-scheme: light) {
+  /* Track  of scrollbar */
+  ::-webkit-scrollbar-track {
+    background: radial-gradient(circle, #0c000c23, #03000304);
+    border-radius: 10px;
+  }
+
+  /* Handle of scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: radial-gradient(circle, #D544EB, #701A75);
+    border-radius: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Track  of scrollbar */
+  ::-webkit-scrollbar-track {
+    background: radial-gradient(circle, #0c000c, #03000383);
+    border-radius: 10px;
+  }
+
+  /* Handle of scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: radial-gradient(circle, #4a044e, #800080);
+    border-radius: 10px;
+  }
+}
+
+/* Handle on hover of scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #d544eb81;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;

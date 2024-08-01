@@ -13,8 +13,8 @@ export default function Page() {
         />
       </div>
       <div>
-        <div className="leading-relaxed text-gray-700 dark:text-zinc-200">
-          <h1 className="font-medium text-3xl text-purple-950 dark:text-purple-300">
+        <div className="leading-relaxed text-zinc-700 dark:text-zinc-200">
+          <h1 className="font-medium text-3xl text-fuchsia-950 dark:text-fuchsia-300">
             Simplesmente comece a planejar
           </h1>
           <p className="font-light pt-2">
