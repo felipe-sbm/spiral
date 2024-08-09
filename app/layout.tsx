@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Spiral",
     description: "Site da Spiral.",
     url: baseUrl,
-    siteName: "Spiral Spiral",
+    siteName: "Spiral",
     locale: "pt_BR",
     type: "website",
   },
@@ -57,7 +57,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="./public/favicon.ico" />
       </Head>
       <body className="flex antialiased">
-        <main className="flex-auto min-w-0 flex flex-col px-2 md:px-0">
+        <main className="flex-auto min-w-0 flex-col px-2 md:px-0">
           <Navbar />
           <div className="max-w-7xl mx-auto py-10 px-12">{children}</div>
           <Footer />
