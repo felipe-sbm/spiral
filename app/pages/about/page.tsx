@@ -29,7 +29,7 @@ export default function Page() {
               <span className="sm:block">nossa prioridade.</span>
             </h1>
 
-            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+            <p className="mx-auto mt-4 max-w-xl sm:text-sm/relaxed">
               Nada mais justo como uma empresa que se preocupa com cada
               detalhes. Por isso juntamos perfecionistas para desenvolver o{" "}
               <strong>melhor</strong> para você.
