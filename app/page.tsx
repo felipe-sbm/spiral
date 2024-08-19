@@ -30,15 +30,13 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="justify-center relative">
-          <Image
-            src="/imagePlacer.png"
-            alt="Imagem para fixar outras imagens em cima"
-            width={1920}
-            height={717}
-          />
-        </div>
+      <div className="justify-center relative">
+        <Image
+          src="/imagePlacer.png"
+          alt="Imagem para fixar outras imagens em cima"
+          width={1920}
+          height={717}
+        />
       </div>
       <div className="lg:grid grid-cols-2 gap-8 lg:mb-16">
         <div>
@@ -105,7 +103,7 @@ export default function Page() {
             Temos algumas opções para você, confira os nossos serviços:
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 lg:grid-cols-3 md:gap-8">
           <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
             <div className="p-6 sm:px-8">
               <span className="inline-flex rounded-full bg-red-100 dark:bg-red-700 px-2.5 py-0.5 text-red-700 dark:text-red-100">
@@ -122,7 +120,7 @@ export default function Page() {
               </p>
               <p className="mt-2 sm:mt-4">
                 <strong className="text-3xl font-bold text-zinc-700 dark:text-zinc-200 sm:text-4xl">
-                  15$
+                  450$
                 </strong>
                 <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
                   /pagamento único
@@ -198,7 +196,7 @@ export default function Page() {
               </p>
               <p className="mt-2 sm:mt-4">
                 <strong className="text-3xl font-bold text-zinc-700 dark:text-zinc-200 sm:text-4xl">
-                  100$
+                  4500$
                 </strong>
                 <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
                   /mês
@@ -281,7 +279,7 @@ export default function Page() {
                 className="mt-4 block rounded border border-fuchsia-600 bg-fuchsia-600 px-12 py-3 text-center text-sm font-medium text-zinc-700 dark:text-zinc-200 hover:bg-transparent hover:text-fuchsia-600 focus:outline-none focus:ring active:text-fuchsia-500 sm:mt-6"
                 href="/pages/contact"
               >
-                Iniciar hoje
+                Entrar em contato
               </a>
             </div>
             <div className="p-6 sm:px-8">
