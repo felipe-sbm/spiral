@@ -13,7 +13,7 @@
 
   /* Handle of scrollbar */
   ::-webkit-scrollbar-thumb {
-    background: radial-gradient(circle, #D544EB, #701A75);
+    background: radial-gradient(circle, #d544eb, #701a75);
     border-radius: 10px;
   }
 }
@@ -40,6 +40,35 @@
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
+}
+/* Botão arco-íris feito por samuka */
+.arco-iris {
+  background: linear-gradient(
+    90deg,
+    #ff00ff,
+    #5900ff,
+    #00aeff,
+    #00fff2,
+    #00ff40,
+    #c8ff00,
+    #fbff00,
+    #ffae00,
+    #ff5100,
+    #ff0000
+  );
+  background-size: 100% 100%;
+  animation: gradient 1s linear infinite;
+  border: none;
+  border-radius: 0.55rem;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.15rem 0.15rem;
+  text-align: center;
+  transition: background 0.5s;
 }
 
 :root {

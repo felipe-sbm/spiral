@@ -8,6 +8,12 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { baseUrl } from "./sitemap";
+import { Reem_Kufi_Fun } from "next/font/google";
+
+const inter = Reem_Kufi_Fun({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -48,7 +54,7 @@ export default function RootLayout({
     <html
       lang="pt-br"
       className={cx(
-        "antialiased text-black bg-white dark:text-white dark:bg-black scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-900 scrollbar-track-gray-100",
+        "antialiased text-white bg-black scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-zinc-900 scrollbar-track-zinc-100",
         GeistSans.variable,
         GeistMono.variable
       )}
@@ -58,11 +64,13 @@ export default function RootLayout({
       </Head>
       <body className="flex antialiased">
         <main className="flex-auto min-w-0 flex-col px-2 md:px-0">
-          <Navbar />
-          <div className="max-w-7xl mx-auto py-10 px-12">{children}</div>
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
+          <div className={inter.className}>
+            <Navbar />
+            <div className="mx-auto py-10">{children}</div>
+            <Footer />
+            <Analytics />
+            <SpeedInsights />
+          </div>
         </main>
       </body>
     </html>
