@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import Image from "next/image";
 import { Pixelify_Sans } from "next/font/google";
 
 const inter = Pixelify_Sans({
@@ -17,10 +17,12 @@ export function Navbar() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Spiral SBM</span>
-            <img
-              className="h-14 w-auto hover:opacity-75"
+            <Image
+              className="lg:h-20 h-12 w-auto hover:opacity-75"
               src="/assets/logo-spiral.png"
               alt="Logo da Spiral SBM"
+              width={319}
+              height={149}
             />
           </a>
         </div>
@@ -30,9 +32,7 @@ export function Navbar() {
             className="arco-iris"
             title="Botão para entrar ir para parte de baixo do site, para ter acesso a área de contato"
           >
-            <span className={inter.className}>
-              <p className="bg-black py-1 px-2 text-xl rounded-lg">Entrar em contato</p>
-            </span>
+              <p className="bg-black py-1 lg:px-6 px-2 lg:text-3xl text-lg rounded-lg">Entrar em contato</p>
           </a>
         </div>
       </nav>

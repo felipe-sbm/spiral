@@ -1,40 +1,36 @@
-import { Github, Mail, BookUser, MoveRight, Instagram } from "lucide-react";
 import Image from "next/image";
-import { Pixelify_Sans } from "next/font/google";
-
-const inter = Pixelify_Sans({
-  weight: "400",
-  subsets: ["latin"],
-});
+import { Github, Mail, BookUser, MoveRight, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-transparent from-15% via-black via-50% to-transparent to-85%">
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <footer className="relative bg-gradient-to-r from-transparent from-15% via-black via-50% to-transparent to-85%">
+      <div className="mx-auto max-w-6xl py-16 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-4 rounded-lg bg-gradient-to-r from-violet-950 via-purple-700 to-fuchsia-600 p-6 shadow-lg sm:flex-row sm:justify-between">
-          <span className={inter.className}>
-            <p className="text-xl text-white sm:text-xl">
+          <span className="jacquard12">
+            <p className="lg:text-3xl text-xl">
               Impulse seus negócios com a Spiral!{" "}
             </p>
           </span>
           <a
-            className="inline-flex items-center gap-2 rounded-lg border border-white bg-white px-8 py-3 text-fuchsia-500 hover:bg-transparent hover:font-bold hover:text-white transition ease-in-out delay-15 hover:-tranzinc-y-1 hover:scale-110 duration-300 focus:outline-none focus:ring active:bg-white/90"
+            className="inline-flex items-center gap-2 rounded-lg border border-white border-2 lg:text-white px-8 py-3 lg:bg-transparent bg-white text-fuchsia-500 hover:bg-transparent hover:text-white lg:hover:bg-white hover:font-bold lg:hover:text-fuchsia-500 transition ease-in-out delay-15 hover:-tranzinc-y-1 hover:scale-110 duration-300 focus:outline-none focus:ring active:bg-white/90"
             href="/pages/contact"
           >
-            <span className="text-sm font-medium"> Vamos começar </span>
+            <span className="text-sm lg:text-lg font-medium">
+              {" "}
+              Vamos começar{" "}
+            </span>
             <MoveRight />
           </a>
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="text-center sm:text-left">
-            <span className={inter.className}>
-              <p className="text-lg font-medium">Sobre Nós</p>
-            </span>
-            <ul className="mt-8 space-y-4 text-sm">
+            {" "}
+            <p className="text-xl font-medium">Sobre Nós</p>
+            <ul className="mt-4 space-y-2 text-sm list-disc">
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Nossa história 🌀
@@ -42,7 +38,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Conheça o nosso time!
@@ -50,14 +46,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Especialidades da empresa
                 </a>
               </li>
               <li>
-                <a className="text-white transition hover:text-fuchsia-300/75 cursor-not-allowed">
+                <a className="text-zinc-500 transition hover:text-fuchsia-300/75 cursor-not-allowed">
                   Trabalhe conosco (em breve!)
                 </a>
               </li>
@@ -65,15 +61,12 @@ export default function Footer() {
           </div>
 
           <div className="text-center sm:text-left">
-            <span className={inter.className}>
-            <p className="text-lg font-medium text-white">
-                Nossos Serviços
-              </p>
-            </span>
-            <ul className="mt-8 space-y-4 text-sm">
+            {" "}
+            <p className="text-xl font-medium text-white">Nossos Serviços</p>
+            <ul className="mt-4 space-y-2 text-sm list-disc">
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Desenvolvimento WEB
@@ -81,33 +74,34 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Webdesign
                 </a>
               </li>
               <li>
-                <a className="text-white transition hover:text-fuchsia-300/75 cursor-not-allowed">
+                <a className="text-zinc-500 transition hover:text-fuchsia-300/75 cursor-not-allowed">
                   Cibersegurança (em breve!)
                 </a>
               </li>
               <li>
-                <a className="text-white transition hover:text-fuchsia-300/75 cursor-not-allowed"></a>
+                <a className="text-zinc-500 transition hover:text-fuchsia-300/75 cursor-not-allowed">
+                  Servidores (em breve!)
+                </a>
               </li>
             </ul>
           </div>
 
           <div className="text-center sm:text-left">
-            <span className={inter.className}>
-            <p className="text-lg font-medium text-white">
-                Recursos Disponíveis
-              </p>
-            </span>
-            <ul className="mt-8 space-y-4 text-sm">
+            {" "}
+            <p className="text-xl font-medium text-white">
+              Recursos Disponíveis
+            </p>
+            <ul className="mt-4 space-y-2 text-sm list-disc">
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Endereço
@@ -115,7 +109,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Tutoriais
@@ -123,7 +117,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Surgestões
@@ -131,7 +125,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Eventos da comunidade
@@ -141,15 +135,12 @@ export default function Footer() {
           </div>
 
           <div className="text-center sm:text-left">
-            <span className={inter.className}>
-              <p className="text-lg font-medium text-white">
-                Links Úteis
-              </p>
-            </span>
-            <ul className="mt-8 space-y-4 text-sm">
+            {" "}
+            <p className="text-xl font-medium text-white">Links Úteis</p>
+            <ul className="mt-4 space-y-2 text-sm list-disc">
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Central de dúvidas
@@ -157,7 +148,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="#"
                 >
                   Política de privacidade
@@ -165,7 +156,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  className="text-white transition hover:text-fuchsia-300/75"
+                  className="text-white transition hover:text-fuchsia-300/75 underline underline-offset-4"
                   href="/pages/contact"
                 >
                   Entre em contato conosco
@@ -225,8 +216,9 @@ export default function Footer() {
           </ul>
 
           <div className="mt-6 justify-right">
-            <span className={inter.className}>
-              <p className="mt-1 text-right text-sm text-zinc-200 sm:mt-0">
+            {" "}
+            <span className="jacquard12">
+              <p className="mt-1 text-right text-sm lg:text-xl text-zinc-500 sm:mt-0">
                 Copyright &copy;Spiral 2024. Todos os direitos reservados.
               </p>
             </span>
