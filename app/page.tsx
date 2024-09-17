@@ -3,17 +3,18 @@ import { Flame, Check, X } from "lucide-react";
 
 export default function Page() {
   return (
-    <div className="relative antialasing">
+    <div className="relative antialasing mb-0 lg:mb-96 md:mb-5 sm:mb-12">
       <div className="justify-center max-w-5xl lg:grid grid-cols-2 gap-24 sm:mt-8 md:mt-12 lg:mt-24 lg:mb-4">
         <div className="leading-relaxed text-center lg:text-right dark:text-zinc-200">
-          <h1 className="font-medium text-3xl text-fuchsia-950 dark:text-fuchsia-300">
+          <h1 className="font-medium text-3xl text-fuchsia-600" id="type">
             Simplesmente comece a planejar
           </h1>
           <p className="font-light pt-2">
             A Spiral irá te ajudar em desenvolver seus planos e impulsionar sua
             carreira ou empresa. Com desenvolvimeto de Websites, sistemas,
-            API's, aplicativos. Nossa startup é focada em compromisso com o
-            cliente, entregando no prazo e com qualidade.
+            API's, aplicativos.
+            Nossa startup é focada em compromisso com o cliente, entregando no
+            prazo e com qualidade.
           </p>
           <strong className="font-semibold">
             Venha fazer parte dessa jornada conosco! (notificação)
@@ -46,7 +47,7 @@ export default function Page() {
             Temos algumas opções para você, confira os nossos serviços:
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 sm:items-stretch md:grid-cols-2 lg:grid-cols-3 md:gap-8 justify-between">
           <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
             <div className="p-6 sm:px-8">
               <span className="inline-flex rounded-full bg-red-100 dark:bg-red-700 px-2.5 py-0.5 text-red-700 dark:text-red-100">
@@ -139,7 +140,7 @@ export default function Page() {
               </p>
               <p className="mt-2 sm:mt-4">
                 <strong className="text-3xl font-bold text-zinc-700 dark:text-zinc-200 sm:text-4xl">
-                  4500$
+                  2500$
                 </strong>
                 <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
                   /mês
@@ -306,14 +307,21 @@ export default function Page() {
           </div>
         </div>
       </div>
-
-      <div className="absolute">
+      <div>
+        <div className="letreiro">
+          <span className="text-7xl">
+            ENTRAR EM CONTATO ENTRAR EM CONTATO ENTRAR EM CONTATO ENTRAR EM
+            CONTATO
+          </span>
+        </div>
+      </div>
+      <div className="absolute opacity-55 lg:-bottom-96 md:-bottom-52 sm:-bottom-48">
         <Image
           src="/assets/spirals-footer.svg"
           alt="Várias espirais de fundo"
           width={500}
           height={500}
-          className="background-footer"
+          className="w-full"
         />
       </div>
     </div>

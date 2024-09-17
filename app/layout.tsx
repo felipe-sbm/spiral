@@ -3,6 +3,7 @@ import Head from "next/head";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import Image from "next/image";
 import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -62,12 +63,21 @@ export default function RootLayout({
       <Head>
         <link rel="shortcut icon" href="./public/favicon.ico" />
       </Head>
-      <body className="flex antialiased">
+      <body className="relative flex antialiased">
         <main className="flex-auto min-w-0 flex-col px-2 md:px-0">
           <div className={inter.className}>
             <Navbar />
+            <div className="absolute opacity-55">
+              <Image
+                src="/assets/spirals-header.svg"
+                alt="Várias espirais de fundo"
+                width={500}
+                height={500}
+                className="w-full"
+              />
+            </div>
             <div className="mx-auto py-10">{children}</div>
-            <Footer />
+              <Footer />
             <Analytics />
             <SpeedInsights />
           </div>

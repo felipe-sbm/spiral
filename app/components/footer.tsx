@@ -4,7 +4,7 @@ import { Github, Mail, BookUser, MoveRight, Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="relative bg-gradient-to-r from-transparent from-15% via-black via-50% to-transparent to-85%">
-      <div className="mx-auto max-w-6xl py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl pb-3 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-4 rounded-lg bg-gradient-to-r from-violet-950 via-purple-700 to-fuchsia-600 p-6 shadow-lg sm:flex-row sm:justify-between">
           <span className="jacquard12">
             <p className="lg:text-3xl text-xl">
@@ -23,7 +23,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 md:mx-6 sm:mx-3 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
           <div className="text-center sm:text-left">
             {" "}
             <p className="text-xl font-medium">Sobre Nós</p>
