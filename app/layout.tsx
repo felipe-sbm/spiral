@@ -67,7 +67,7 @@ export default function RootLayout({
         <main className="flex-auto min-w-0 flex-col px-2 md:px-0">
           <div className={inter.className}>
             <Navbar />
-            <div className="absolute opacity-55">
+            <div className="absolute opacity-100">
               <Image
                 src="/assets/spirals-header.svg"
                 alt="Várias espirais de fundo"

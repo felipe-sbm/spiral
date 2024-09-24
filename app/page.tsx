@@ -4,30 +4,67 @@ import { Flame, Check, X } from "lucide-react";
 export default function Page() {
   return (
     <div className="relative antialasing mb-0 lg:mb-96 md:mb-5 sm:mb-12">
-      <div className="justify-center max-w-5xl lg:grid grid-cols-2 gap-24 sm:mt-8 md:mt-12 lg:mt-24 lg:mb-4">
-        <div className="leading-relaxed text-center lg:text-right dark:text-zinc-200">
-          <h1 className="font-medium text-3xl text-fuchsia-600" id="type">
-            Simplesmente comece a planejar
-          </h1>
-          <p className="font-light pt-2">
-            A Spiral irá te ajudar em desenvolver seus planos e impulsionar sua
-            carreira ou empresa. Com desenvolvimeto de Websites, sistemas,
-            API's, aplicativos.
-            Nossa startup é focada em compromisso com o cliente, entregando no
-            prazo e com qualidade.
-          </p>
-          <strong className="font-semibold">
-            Venha fazer parte dessa jornada conosco! (notificação)
-          </strong>
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="justify-center max-w-5xl lg:grid grid-cols-2 gap-24 sm:mt-8 md:mt-12 lg:mt-24 lg:mb-4">
+          <div className="leading-relaxed text-center lg:text-right dark:text-zinc-200 lg:pt-56 sm:pt-0 mb-10 mx-18">
+            <h1 className="font-medium text-6xl" id="type">
+              Simplesmente <br /> comece a{" "}
+              <span className="text-fade">planejar</span>
+            </h1>
+            <p className="font-light leading-loose text-pretty lg:text-2xl text-md pt-2">
+              A Spiral irá te ajudar em desenvolver seus planos e impulsionar
+              sua carreira ou empresa. Com desenvolvimeto de Websites, sistemas,
+              API's, aplicativos. Nossa startup é focada em compromisso com o
+              cliente, entregando no prazo e com qualidade.
+            </p>
+          </div>
+          <div className="relative mb-8">
+            <div className="flex absolute top-20 right-12 bg-zinc-900/95 px-3 py-3 rounded-xl">
+              <div className="block bg-black px-3 py-3 rounded-xl">
+                <Image
+                  src="/fatSpiral.svg"
+                  alt="Logo da Spiral em uma notificação de celular"
+                  width={50}
+                  height={50}
+                  blurDataURL="/assets/purpleSpiral.png"
+                  className="select-none no-drag"
+                />
+              </div>
+              <p className="ml-6 font-light text-zinc-300 text-md mr-10" id="notification">
+                <strong className="font-semibold text-white text-lg">
+                  Spiral te enviou um convite
+                </strong>{" "}
+                <br />
+                Venha fazer parte dessa <br /> jornada conosco!
+              </p>
+            </div>
+            <div className="absolute bottom-1/4 right-10 blur-xl">
+              <Image
+                src="/assets/purpleSpiral.png"
+                alt="Logo da Spiral em uma notificação de celular"
+                width={370}
+                height={370}
+                blurDataURL="/assets/purpleSpiral.png"
+                className="select-none no-drag"
+              />
+            </div>
+            <Image
+              src="/assets/iphone_xs.png"
+              alt="Imagem de um iPhone XS Maxx para fixar outras imagens em cima"
+              width={1920}
+              height={717}
+              blurDataURL="/assets/purpleSpiral.png"
+              className="select-none no-drag"
+            />
+          </div>
         </div>
-        <div className="mb-8">
-          <Image
-            src="/assets/iphone_xs.png"
-            alt="Imagem para fixar outras imagens em cima"
-            width={1920}
-            height={717}
-          />
-        </div>
+      </div>
+      <div className="mt-20">
+        <hr />
+        <h1 className="slogan">
+          Sua satisfação é a <br /> nossa <span className="text-fade">prioridade</span>.
+        </h1>
+        <hr />
       </div>
       <div className="justify-center relative">
         <Image
@@ -35,6 +72,8 @@ export default function Page() {
           alt="Imagem para fixar outras imagens em cima"
           width={1920}
           height={717}
+          blurDataURL="/assets/purpleSpiral.png"
+          className="select-none no-drag"
         />
       </div>
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -48,9 +87,9 @@ export default function Page() {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 sm:items-stretch md:grid-cols-2 lg:grid-cols-3 md:gap-8 justify-between">
-          <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
+          <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm" id="prices-border">
             <div className="p-6 sm:px-8">
-              <span className="inline-flex rounded-full bg-red-100 dark:bg-red-700 px-2.5 py-0.5 text-red-700 dark:text-red-100">
+              <span className="inline-flex rounded-full bg-red-700 px-2.5 py-0.5 text-red-100">
                 <Flame className="size-4" />
                 <p className="whitespace-nowrap text-sm">Mais popular</p>
               </span>

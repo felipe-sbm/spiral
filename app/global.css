@@ -112,6 +112,21 @@ html {
   color-scheme: auto;
 }
 
+hr {
+  border: none;
+  height: 0.25rem;
+  background: linear-gradient(90deg, black, white, black);
+}
+.slogan {
+  font-family: "Jacquard12", sans-serif;
+  font-size: 7.5rem;
+  line-height: 5rem;
+  color: linear-gradient(90deg, black, #ffffff, #949494);
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .letreiro {
   width: 100%;
   overflow: hidden;
@@ -124,6 +139,12 @@ html {
   animation: mover 22s linear infinite;
 }
 
+.text-fade {
+  background: linear-gradient(90deg, #ce03bf, #9d1baa, #9d1baa, #6a1070);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @keyframes mover {
   0% {
     transform: translateX(-25%);
@@ -133,9 +154,14 @@ html {
   }
 }
 
+#notification {
+  line-height: 1.2rem;
+}
+
 #type {
   font-family: "Jacquard12", sans-serif;
-  border-right: solid 3px #d544ebbf;
+  line-height: 3rem;
+  border-right: solid 3px #ce03c188;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -156,7 +182,7 @@ html {
 
 @keyframes animated-cursor {
   from {
-    border-right-color: #d544ebbf;
+    border-right-color: #ce03c188;
   }
   to {
     border-right-color: transparent;
