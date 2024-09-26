@@ -196,7 +196,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex relative justify-center items-center">
         <div className="max-w-8xl text-center lg:mx-14 space-y-8">
           <Image
             src="/assets/imagePlacer.webp"
@@ -206,9 +206,18 @@ export default function Page() {
             blurDataURL="/assets/imagePlacer.webp"
             className="shadow-xl"
           />
+          <div className="absolute left-28 bottom-44 opacity-55">
+            <div className="neon" />
+          </div>
         </div>
       </div>
       <div className="relative max-w-screen-xl lg:-mt-20 px-4 pb-8 sm:px-6 sm:pb-12 lg:px-8 lg:pb-16 z-2">
+        <div className="absolute right-2 -top-20">
+          <div className="neon" />
+        </div>
+        <div className="absolute left-2 -bottom-20">
+          <div className="neon" />
+        </div>
         <div className="text-center">
           <h1 className="prices-title">Nunca é apenas um sonho</h1>
           <p className="mb-8 leading-relaxed text-2xl">
@@ -433,7 +442,11 @@ export default function Page() {
             height={400}
             blurDataURL="/assets/purpleSpiral.png"
             className="select-none no-drag z-2"
+            id="purple-spiral"
           />
+          <div className="absolute opacity-75">
+            <div className="neon" />
+          </div>
         </div>
       </div>
       <div className="absolute opacity-55 lg:-bottom-96 md:-bottom-52 sm:-bottom-48">

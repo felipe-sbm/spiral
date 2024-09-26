@@ -116,23 +116,31 @@ hr {
   border-radius: 10px;
 }
 
+#purple-spiral {
+  animation-name: spiral;
+  animation-duration: 700s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spiral {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .prices-title {
   font-family: "Jacquard12", sans-serif;
   font-size: 5rem;
   -webkit-text-stroke: 0.5px #fafafa;
-
 }
 
 #prices-border {
   border: 0.2rem solid transparent;
-  border-image: linear-gradient(
-      180deg,
-      #380064,
-      #6A1070,
-      #9F1CAB,
-      #CE03BF
-    )
-    1;
+  border-image: linear-gradient(180deg, #380064, #6a1070, #9f1cab, #ce03bf) 1;
   border-radius: 1rem;
 }
 
@@ -210,7 +218,7 @@ hr {
 }
 
 #contactNow {
-  background: linear-gradient(90deg, #380064, #6A1070, #9D1BAA, #CE03BF);
+  background: linear-gradient(90deg, #380064, #6a1070, #9d1baa, #ce03bf);
 }
 
 .neon {
