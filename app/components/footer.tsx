@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-gradient-to-r from-transparent from-15% via-black via-50% to-transparent to-85%">
       <div className="mx-auto max-w-6xl pb-3 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-4 rounded-lg bg-gradient-to-r from-violet-950 via-purple-700 to-fuchsia-600 p-6 shadow-lg sm:flex-row sm:justify-between">
+        <div className="flex flex-col items-center gap-4 rounded-lg p-6 shadow-lg sm:flex-row sm:justify-between" id="contactNow">
           <span className="jacquard12">
             <p className="lg:text-3xl text-xl">
               Impulse seus negócios com a Spiral!{" "}

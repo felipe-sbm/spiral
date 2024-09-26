@@ -4,32 +4,17 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
-@media (prefers-color-scheme: light) {
-  /* Track  of scrollbar */
-  ::-webkit-scrollbar-track {
-    background: radial-gradient(circle, #0c000c23, #03000304);
-    border-radius: 10px;
-  }
 
-  /* Handle of scrollbar */
-  ::-webkit-scrollbar-thumb {
-    background: radial-gradient(circle, #d544eb, #701a75);
-    border-radius: 10px;
-  }
+/* Track  of scrollbar */
+::-webkit-scrollbar-track {
+  background: radial-gradient(circle, #39006434, #6a107000);
+  border-radius: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  /* Track  of scrollbar */
-  ::-webkit-scrollbar-track {
-    background: radial-gradient(circle, #0c000c, #03000383);
-    border-radius: 10px;
-  }
-
-  /* Handle of scrollbar */
-  ::-webkit-scrollbar-thumb {
-    background: radial-gradient(circle, #4a044e, #800080);
-    border-radius: 10px;
-  }
+/* Handle of scrollbar */
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(circle, #a21caf, #a21caf, #9f1cab, #380064);
+  border-radius: 10px;
 }
 
 /* Handle on hover of scrollbar */
@@ -63,6 +48,18 @@
 
 .jacquard12 {
   font-family: "Jacquard12", sans-serif;
+}
+
+#jacquard12 {
+  font-family: "Jacquard12", sans-serif;
+}
+
+.sunshiney {
+  font-family: "Sunshiney", sans-serif;
+}
+
+#sunshiney {
+  font-family: "Sunshiney", sans-serif;
 }
 
 @font-face {
@@ -116,12 +113,64 @@ hr {
   border: none;
   height: 0.25rem;
   background: linear-gradient(90deg, black, white, black);
+  border-radius: 10px;
 }
+
+.prices-title {
+  font-family: "Jacquard12", sans-serif;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.5px #fafafa;
+
+}
+
+#prices-border {
+  border: 0.2rem solid transparent;
+  border-image: linear-gradient(
+      180deg,
+      #380064,
+      #6A1070,
+      #9F1CAB,
+      #CE03BF
+    )
+    1;
+  border-radius: 1rem;
+}
+
+#grid-border-top {
+  border: 0.1rem solid transparent;
+  border-image: linear-gradient(
+      0deg,
+      #380064,
+      #6a1070,
+      #a21caf,
+      #a21caf,
+      #9f1cab
+    )
+    1;
+  border-radius: 1rem;
+}
+
+#grid-border-bottom {
+  border: 0.1rem solid transparent;
+  border-image: linear-gradient(
+      180deg,
+      #380064,
+      #6a1070,
+      #a21caf,
+      #a21caf,
+      #9f1cab
+    )
+    1;
+  border-radius: 1rem;
+}
+
 .slogan {
   font-family: "Jacquard12", sans-serif;
   font-size: 7.5rem;
   line-height: 5rem;
-  color: linear-gradient(90deg, black, #ffffff, #949494);
+  background: linear-gradient(90deg, #3b3b3b, #ffffff, #3b3b3b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -134,28 +183,44 @@ hr {
   box-sizing: border-box;
 }
 
-.letreiro span {
+#letreiro {
+  font-size: 10rem;
   display: inline-block;
-  animation: mover 22s linear infinite;
+  animation: mover 60s linear infinite;
 }
 
 .text-fade {
-  background: linear-gradient(90deg, #ce03bf, #9d1baa, #9d1baa, #6a1070);
+  background: linear-gradient(240deg, #ce03bf, #9d1baa, #9d1baa);
   background-clip: text;
+  -webkit-text-stroke: 0.5px #ce03bf;
   -webkit-text-fill-color: transparent;
 }
 
 @keyframes mover {
   0% {
-    transform: translateX(-25%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-50.1%);
   }
 }
 
 #notification {
   line-height: 1.2rem;
+}
+
+#contactNow {
+  background: linear-gradient(90deg, #380064, #6A1070, #9D1BAA, #CE03BF);
+}
+
+.neon {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 100%;
+  background-color: #ce03bf;
+  filter: blur(7rem);
+  box-shadow: 0 0 50px #e704d8;
+  z-index: -1;
 }
 
 #type {

@@ -18,7 +18,7 @@ export function Navbar() {
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Spiral SBM</span>
             <Image
-              className="lg:h-20 h-12 w-auto hover:opacity-75"
+              className="lg:h-20 h-12 w-auto opacity-100 transition duration-700 hover:opacity-75"
               src="/assets/logo-spiral.png"
               alt="Logo da Spiral SBM"
               width={319}
@@ -29,7 +29,7 @@ export function Navbar() {
         <div className="flex justify-right">
           <a
             href="/"
-            className="transition ease-in-out delay-15 hover:-tranzinc-y-1 hover:scale-110 duration-700 focus:outline-none focus:ring active:bg-white/90"
+            className="transition ease-in-out delay-15 transition hover:scale-110 duration-700 focus:outline-none focus:ring active:bg-white/90"
             id="arco-iris"
           >
               <p className="bg-black py-1 lg:px-6 px-2 lg:text-3xl text-lg rounded-lg">Entrar em contato</p>
