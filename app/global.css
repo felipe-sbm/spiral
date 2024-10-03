@@ -59,6 +59,7 @@
 }
 
 #sunshiney {
+  position: absolute;
   font-family: "Sunshiney", sans-serif;
 }
 
@@ -76,34 +77,6 @@
   font-style: normal;
 }
 
-:root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
-  --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
-  --sh-comment: #a19595;
-  --sh-jsxliterals: #6266d1;
-  --sh-property: #e25a1c;
-  --sh-entity: #e25a1c;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-}
 html {
   min-width: 360px;
   color-scheme: auto;
@@ -130,6 +103,10 @@ hr {
   to {
     transform: rotate(0deg);
   }
+}
+
+#arrow {
+  position: absolute;
 }
 
 .prices-title {
@@ -213,8 +190,18 @@ hr {
   }
 }
 
-#notification {
+#notification {margin-left: 1.5rem; /* ml-6 */
+  font-weight: 300;
+  color: #d1d5db;
+  font-size: 1rem;
+  margin-right: 2.5rem;
   line-height: 1.2rem;
+}
+#notification strong {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 #contactNow {
@@ -222,26 +209,54 @@ hr {
 }
 
 .neon {
-  width: 17rem;
-  height: 17rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 100%;
   background-color: #ce03bf;
-  filter: blur(7rem);
-  box-shadow: 0 0 50px #e704d8;
+  filter: blur(5rem);
+  box-shadow: 0 0 30px #e704d8;
   z-index: -1;
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
+/* Consultas de mídia para telas médias */
+@media (min-width: 768px) {
+  .neon {
+    width: 15rem;
+    height: 15rem;
+    filter: blur(6rem);
+    box-shadow: 0 0 40px #e704d8;
+    top: 20%;
+    left: 20%;
+  }
+}
+
+/* Consultas de mídia para telas grandes */
+@media (min-width: 1024px) {
+  .neon {
+    width: 20rem;
+    height: 20rem;
+    filter: blur(7rem);
+    box-shadow: 0 0 50px #e704d8;
+    top: 30%;
+    left: 30%;
+  }
+}
 #type {
   font-family: "Jacquard12", sans-serif;
   line-height: 3rem;
   border-right: solid 3px #ce03c188;
   white-space: nowrap;
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 #type {
-  animation: animated-text 4s steps(29, end) 1s 1 normal both,
-    animated-cursor 1000ms steps(29, end) infinite;
+  animation: animated-text 4s steps(17, end) 1s 1 normal both,
+    animated-cursor 1000ms steps(17, end) infinite;
 }
 
 @keyframes animated-text {
@@ -249,7 +264,7 @@ hr {
     width: 0;
   }
   to {
-    width: 472px;
+    width: 100%;
   }
 }
 
@@ -262,146 +277,78 @@ hr {
   }
 }
 
-.prose .anchor {
-  position: absolute;
-  visibility: hidden;
-  text-decoration: none;
-  margin-left: 1em;
-  padding-right: 0.5em;
-  width: 80%;
-  max-width: 1200px;
-  cursor: pointer;
+@media (max-width: 767px) {
+  #type {
+    font-size: 3.5rem;
+    line-height: 2.4rem;
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 }
 
-.anchor:hover {
-  visibility: visible;
+@media (min-width: 768px) and (max-width: 1023px) {
+  #type {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 }
 
-.prose a {
-  text-decoration: underline;
-  transition: all;
-  text-decoration-color: var(--decoration-neutral-400);
-  color: var(--decoration-neutral-600);
+@media (min-width: 1024px) {
+  #type {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
 }
 
-.prose .anchor:after {
-  color: var(--text-neutral-300);
-  content: "#";
+@media (min-width: 768px) {
+  .prices-title {
+    font-size: 4rem; /* Aumenta o tamanho do texto em telas médias */
+  }
+
+  #prices-border {
+    border-width: 0.3rem; /* Aumenta a largura da borda em telas médias */
+  }
+
+  #grid-border-top {
+    border-width: 0.2rem; /* Aumenta a largura da borda em telas médias */
+  }
 }
 
-.prose *:hover > .anchor {
-  visibility: visible;
-}
+@media (min-width: 1024px) {
+  .prices-title {
+    font-size: 5rem; /* Aumenta ainda mais o tamanho do texto em telas grandes */
+  }
 
-.prose pre {
-  background-color: var(--bg-neutral-50);
-  color: var(--text-neutral-800);
-  border-radius: 0.25rem;
-  overflow-x: auto;
-  border: 1px solid var(--border-neutral-200);
-  padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
-}
+  #prices-border {
+    border-width: 0.4rem; /* Aumenta ainda mais a largura da borda em telas grandes */
+  }
 
-.prose code {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  border-radius: 0.25rem;
-}
-
-.prose pre code {
-  padding: 0;
-  border: initial;
-  line-height: 1.5;
-}
-
-.prose code span {
-  font-weight: 500;
-}
-
-.prose img {
-  margin: 0;
-}
-
-.prose p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: var(--text-neutral-800);
-}
-
-.prose h1 {
-  font-size: 2.25rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.prose h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.prose h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.prose h4 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.prose strong {
-  font-weight: 500;
-}
-
-.prose ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.prose ol {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
-}
-
-.prose > :first-child {
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
-}
-
-pre::-webkit-scrollbar {
-  display: none;
-}
-
-pre {
-  -ms-overflow-style: none;
-  overflow: auto;
-}
-
-input[type="text"],
-input[type="email"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-table {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.title {
-  overflow-wrap: balance;
+  #grid-border-top {
+    border-width: 0.3rem; /* Aumenta ainda mais a largura da borda em telas grandes */
+  }
 }

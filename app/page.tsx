@@ -40,14 +40,8 @@ export default function Page() {
                   className="select-none no-drag"
                 />
               </div>
-              <p
-                className="ml-6 font-light text-zinc-300 text-md mr-10"
-                id="notification"
-              >
-                <strong className="font-semibold text-white text-lg">
-                  Spiral te enviou um convite
-                </strong>{" "}
-                <br />
+              <p id="notification">
+                <strong>Spiral te enviou um convite</strong> <br />
                 Venha fazer parte dessa <br /> jornada conosco!
               </p>
             </div>
@@ -417,9 +411,9 @@ export default function Page() {
           width={50}
           height={50}
           blurDataURL="/assets/Arrow.svg"
-          className="absolute left-1/2"
+          id="arrow"
         />
-        <p className="absolute max-w-xl text-xl left-96" id="sunshiney">
+        <p id="sunshiney">
           Lembresse que você pode modificar cada um desses pacotes, sem a
           necessidade de pagar um valor alto! Nós fazemos o melhor para
           moldarmos o que você pediu, viu? <br />
@@ -429,7 +423,7 @@ export default function Page() {
       </div>
       <div className="relative mt-72">
         <div className="letreiro">
-          <span id="letreiro">
+          <span className="sm:text-lg" id="letreiro">
             A SPIRAL PODE TE AJUDAR, ENTRE EM CONTATO! A SPIRAL PODE TE AJUDAR,
             ENTRE EM CONTATO!
           </span>
