@@ -51,7 +51,7 @@ export default function Page() {
                 alt="Logo da Spiral em uma notificação de celular"
                 width={370}
                 height={370}
-                blurDataURL="/assets/purpleSpiral.png"
+                blurDataURL="/assets/purpleSpiral.webp"
                 className="select-none no-drag"
               />
             </div>
@@ -60,7 +60,7 @@ export default function Page() {
               alt="Imagem de um iPhone XS Maxx para fixar outras imagens em cima"
               width={1920}
               height={717}
-              blurDataURL="/assets/iphone_xs.png"
+              blurDataURL="/assets/iphone_xs.webp"
               className="select-none no-drag"
             />
           </div>
@@ -430,7 +430,7 @@ export default function Page() {
         </div>
         <div className="absolute inset-0 flex justify-center items-center shadow-xl">
           <Image
-            src="/assets/purpleSpiral.png"
+            src="/assets/purpleSpiral.webp"
             alt="Imagem para fixar outras imagens em cima"
             width={400}
             height={400}
